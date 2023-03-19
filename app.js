@@ -28,7 +28,6 @@ app.post('/login', function (req, res) {
 	console.log('query: ' + query);
 
 	db.get(query, function (err, row) {
-
 		if (err) {
 			console.log('ERROR', err);
 			res.redirect("/index.html#error");
@@ -38,7 +37,6 @@ app.post('/login', function (req, res) {
 			res.send('Hello <b>' + row.title + '!</b><br /> This file contains all your secret data: <br /><br /> SECRETS <br /><br /> MORE SECRETS <br /><br /> <a href="/index.html">Go back to login</a>');
 		}
 	});
-
 });
 
-app.listen(3003);
+app.listen(3045);

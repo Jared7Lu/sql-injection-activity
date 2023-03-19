@@ -10,11 +10,12 @@
 <body>
     <div class="container">
         <form action="/login" method="post">
-            <label>Username</label>
-            <input type="text" required>        
-            <label>Password</label>
-            <input type="text" required>
-            <button type="submit">Submit</button>
+            <div class="container">
+              <label>Username</label>
+              <input type="text" name="username" required>
+              <label>Password</label>
+              <input type="password" name="password" required>  
+              <button type="submit">Login</button>
             </div>
             <script>
                 if(document.location.hash === '#unauthorized') {
